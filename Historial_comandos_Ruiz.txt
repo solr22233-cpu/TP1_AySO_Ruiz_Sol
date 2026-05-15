@@ -1,0 +1,15 @@
+cd cd ~/repogit/TP1_AySO_Ruiz_Sol
+cd ~/repogit/TP1_AySO_Ruiz_Sol
+grep -i "HOME_URL" /etc/os-release > datos_url.txt
+echo "Usuario=\$(whoami)" > datos_usuario.txt
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+cat <<EOF > README.md
+Alumno: Sol Ruiz
+División: 1
+Turno: Mañana
+EOF
+
+mkdir -p ~/material/{uni1,uni2,uni3} ~/materia2/{uni1,uni2,uni3}
+echo 'mkdir -p ~/material/{uni1,uni2,uni3} ~/materia2/{uni1,uni2,uni3}' > script_dir.sh
+chmod +x script_dir.sh
+history -a
