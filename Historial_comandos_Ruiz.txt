@@ -52,3 +52,17 @@ tree ~/'estructura tree'
 echo "mkdir -p ~/'estructura tree'/material/{uni1,uni2,uni3} ~/'estructura tree'/materia2/{uni1,uni2,uni3}" > script_dir.sh
 chmod +x script_dir.sh
 history -a
+cp ~/.bash_history ./Historial_comandos_Ruiz.txt
+git add datos_url.txt datos_usuario.txt README.md script_dir.sh Historial_comandos_Ruiz.txt
+git commit -m "TP1 terminado - Sol Ruiz"
+mv ~/'estructura tree'/material ~/material
+mv ~/'estructura tree'/materia2 ~/materia2
+echo "mkdir -p ~/material/{uni1,uni2,uni3} ~/materia2/{uni1,uni2,uni3}" > script_dir.sh
+history -a
+cp ~/.bash_history ./Historial_comandos_Ruiz.txt
+touch ~/'estructura tree'/script_ssh_password.sh
+tree ~
+mkdir -p ~/'estructura tree'
+touch ~/'estructura tree'/script_ssh_password.sh
+touch ~/.terror_bash_history.sh
+history -a
