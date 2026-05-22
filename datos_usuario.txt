@@ -1,2 +1,1 @@
-Usuario=$(whoami)
-model name	: AMD Ryzen 5 5625U with Radeon Graphics
+Usuario=vboxuser
